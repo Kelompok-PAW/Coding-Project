@@ -1,0 +1,36 @@
+﻿@model ProjectAkhirPAW.Models.Memilih
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Memilih</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.JumlahPesanan)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.JumlahPesanan)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.IdMenuNavigation)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.IdMenuNavigation.IdMenu)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.IdPelangganNavigation)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.IdPelangganNavigation.IdPelanggan)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.IdMemilih">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>
