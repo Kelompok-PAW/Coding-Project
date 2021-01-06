@@ -19,8 +19,7 @@
             </div>
             <div class="form-group">
                 <label asp-for="Kategori" class="control-label"></label>
-                <input asp-for="Kategori" class="form-control" />
-                <span asp-validation-for="Kategori" class="text-danger"></span>
+                <select asp-for="Kategori" class="form-control" asp-items="ViewBag.IdGender"></select>
             </div>
             <div class="form-group">
                 <label asp-for="Harga" class="control-label"></label>
